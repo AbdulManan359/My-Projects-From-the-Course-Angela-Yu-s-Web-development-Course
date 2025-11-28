@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container {
+      display: grid;
+      margin-left: 25%;
+      /* height: 90vh; */
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 285px 20px;
+      gap: 0px;
+    }
+
+    .grid_item {
+      /* height:100px; */
+      /* width:100px; */
+      background-color: aqua;
+      border: 4.5px black solid;
+    }
+
+    .item_1 {
+      background-color: #E72F24;
+      border-top: 0px;
+      border-left: 0px;
+    }
+
+    .item_2 {
+      background-color: #F0F1EC;
+      grid-column: span 3;
+      border-top: 0px;
+      border-right: 0px;
+    }
+
+    .item_3 {
+      background-color: #F0F1EC;
+      border-left: 0px;
+    }
+
+    .item_4 {
+      background-color: #F0F1EC;
+      grid-column: span 2;
+      border-right: 9px solid black;
+    }
+
+    .item_5 {
+      background-color: #004592;
+      border-right: 0px;
+      border-left: 0px;
+      border-bottom: 18px solid black;
+      height: 130px;
+    }
+
+    .item_6 {
+      border-bottom: 0px;
+      border-left: 0px;
+      background-color: #F0F1EC;
+    }
+
+    .item_7 {
+      background-color: #F9D01E;
+      border-bottom: 0px;
+
+    }
+
+    .item_8 {
+      background-color: #232629;
+      border-bottom: 0px;
+      border-right: 9px black solid;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="grid_item item_1"></div>
+    <div class="grid_item item_2"></div>
+    <div class="grid_item item_3"></div>
+    <div class="grid_item item_4"></div>
+    <div class="grid_item item_5"></div>
+    <div class="grid_item item_6"></div>
+    <div class="grid_item item_7"></div>
+    <div class="grid_item item_8"></div>
+  </div>
+</body>
+
+</html>
